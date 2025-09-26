@@ -67,75 +67,84 @@ export const MacbookPro = (): JSX.Element => {
   ];
 
   return (
-    <div className="bg-[#e9f5ff] w-full min-h-screen relative">
+    <div className="bg-[#e9f5ff] w-full min-h-screen relative overflow-x-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-[302px] left-[2%] right-[2%] h-[842px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
-      <div className="absolute top-[3511px] left-0 right-0 h-[994px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
+      <div className="absolute top-[302px] left-[2%] right-[2%] h-[400px] md:h-[842px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
+      <div className="hidden md:block absolute top-[3511px] left-0 right-0 h-[994px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
 
       {/* Decorative circles */}
-      {decorativeCircles.map((circle, index) => (
-        <div
-          key={`circle-${index}`}
-          className={`absolute ${circle.top} ${circle.left} w-[130px] h-[130px] ${circle.bg} rounded-[65px]`}
-        />
-      ))}
+      <div className="hidden lg:block">
+        {decorativeCircles.map((circle, index) => (
+          <div
+            key={`circle-${index}`}
+            className={`absolute ${circle.top} ${circle.left} w-[130px] h-[130px] ${circle.bg} rounded-[65px]`}
+          />
+        ))}
+      </div>
 
       {/* Header Navigation */}
-      <header className="absolute top-[57px] left-[4%] right-[4%] h-[120px] bg-[#bccbff] rounded-[75px] opacity-45">
-        <div className="absolute top-[70px] left-[85px] w-[94px] h-[94px] rounded-[47px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]">
+      <header className="absolute top-[20px] md:top-[57px] left-[2%] md:left-[4%] right-[2%] md:right-[4%] h-[80px] md:h-[120px] bg-[#bccbff] rounded-[20px] md:rounded-[75px] opacity-45">
+        <div className="absolute top-[10px] md:top-[70px] left-[20px] md:left-[85px] w-[60px] md:w-[94px] h-[60px] md:h-[94px] rounded-[30px] md:rounded-[47px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]">
           <img
-            className="absolute w-[80.00%] h-[58.34%] top-[13.83%] left-[10.00%]"
+            className="absolute w-[80.00%] h-[58.34%] top-[13.83%] left-[10.00%] object-contain"
             alt="Mask group"
             src="/mask-group-9.png"
           />
         </div>
 
-        <div className="absolute top-[91px] left-[205px] w-[435px] [font-family:'Inter',Helvetica] font-medium text-black text-[40px] tracking-[0] leading-[normal]">
+        <div className="absolute top-[25px] md:top-[91px] left-[90px] md:left-[205px] w-[200px] md:w-[435px] [font-family:'Inter',Helvetica] font-medium text-black text-[20px] md:text-[40px] tracking-[0] leading-[normal]">
           Helping MBBS
         </div>
 
-        <nav className="flex absolute top-[104px] left-[45%] gap-[120px]">
+        <nav className="hidden md:flex absolute top-[104px] left-[45%] gap-[60px] lg:gap-[120px]">
           <Link
             to="/"
-            className="[font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] text-[#0e70c9] hover:text-[#0e70c9] transition-colors cursor-pointer"
+            className="[font-family:'Inter',Helvetica] font-normal text-lg lg:text-2xl tracking-[0] leading-[normal] text-[#0e70c9] hover:text-[#0e70c9] transition-colors cursor-pointer"
           >
             Home
           </Link>
           <Link
             to="#"
-            className="[font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] text-black hover:text-[#0e70c9] transition-colors cursor-pointer"
+            className="[font-family:'Inter',Helvetica] font-normal text-lg lg:text-2xl tracking-[0] leading-[normal] text-black hover:text-[#0e70c9] transition-colors cursor-pointer"
           >
             About Us
           </Link>
           <Link
             to="/services"
-            className="[font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] text-black hover:text-[#0e70c9] transition-colors cursor-pointer"
+            className="[font-family:'Inter',Helvetica] font-normal text-lg lg:text-2xl tracking-[0] leading-[normal] text-black hover:text-[#0e70c9] transition-colors cursor-pointer"
           >
             Join Us
           </Link>
         </nav>
 
-        <div className="absolute top-[78px] right-[85px] w-[79px] h-[78px] rounded-[39.5px/39px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]" />
+        <div className="absolute top-[11px] md:top-[78px] right-[20px] md:right-[85px] w-[58px] md:w-[79px] h-[58px] md:h-[78px] rounded-[29px] md:rounded-[39.5px/39px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]" />
+        
+        {/* Mobile menu button */}
+        <button className="md:hidden absolute top-[30px] right-[80px] text-black">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </header>
 
       {/* Hero Section */}
       <section className="relative">
-        <div className="absolute top-[349px] left-[40%] w-[466px] [font-family:'ABeeZee',Helvetica] font-normal text-[#1e6670] text-8xl tracking-[0] leading-[100px] whitespace-nowrap">
+        <div className="absolute top-[150px] md:top-[349px] left-[5%] md:left-[40%] w-[90%] md:w-[466px] [font-family:'ABeeZee',Helvetica] font-normal text-[#1e6670] text-4xl md:text-8xl tracking-[0] leading-[50px] md:leading-[100px] text-center md:text-left">
           About Us
         </div>
 
-        <div className="absolute top-[796px] left-0 w-[463px] opacity-85 [font-family:'Berlin_Sans_FB-Regular',Helvetica] font-normal text-[#1e666f] text-5xl text-center tracking-[0] leading-[45px] whitespace-nowrap">
+        <div className="absolute top-[250px] md:top-[796px] left-[5%] md:left-0 w-[90%] md:w-[463px] opacity-85 [font-family:'Berlin_Sans_FB-Regular',Helvetica] font-normal text-[#1e666f] text-2xl md:text-5xl text-center tracking-[0] leading-[30px] md:leading-[45px]">
           Why It Started?
         </div>
 
-        <div className="absolute top-[890px] left-[70px] w-[977px] opacity-65 [font-family:'Abhaya_Libre_ExtraBold-Regular',Helvetica] font-normal text-[#1e6670] text-4xl tracking-[0] leading-[35px]">
+        <div className="absolute top-[320px] md:top-[890px] left-[5%] md:left-[70px] w-[90%] md:w-[977px] opacity-65 [font-family:'Abhaya_Libre_ExtraBold-Regular',Helvetica] font-normal text-[#1e6670] text-lg md:text-4xl tracking-[0] leading-[25px] md:leading-[35px] px-4 md:px-0">
           Too many books both indian and foreign to be covered within a short
           period of time... clinical postings and theory classes taking our
           time..."CBME"stressed out?
         </div>
 
         <img
-          className="absolute top-[391px] right-[5%] w-[641px] h-[753px] object-cover"
+          className="absolute top-[500px] md:top-[391px] right-[5%] w-[300px] md:w-[641px] h-[350px] md:h-[753px] object-cover"
           alt="Download free png of"
           src="/download-free-png-of-png-indian-man-pointing-smiling-finger---by.png"
         />
