@@ -67,7 +67,7 @@ export const MacbookPro = (): JSX.Element => {
   ];
 
   return (
-    <div className="bg-[#e9f5ff] overflow-hidden w-full min-h-screen relative">
+    <div className="bg-[#e9f5ff] w-full min-h-screen relative">
       {/* Background decorative elements */}
       <div className="absolute top-[302px] left-[2%] right-[2%] h-[842px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
       <div className="absolute top-[3511px] left-0 right-0 h-[994px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
