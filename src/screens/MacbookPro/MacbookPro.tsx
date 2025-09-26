@@ -67,10 +67,10 @@ export const MacbookPro = (): JSX.Element => {
   ];
 
   return (
-    <div className="bg-[#e9f5ff] overflow-hidden w-full min-w-[1728px] min-h-[5214px] relative">
+    <div className="bg-[#e9f5ff] overflow-hidden w-full min-h-screen relative">
       {/* Background decorative elements */}
-      <div className="absolute top-[302px] left-[26px] w-[1676px] h-[842px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
-      <div className="absolute top-[3511px] left-0 w-[1728px] h-[994px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
+      <div className="absolute top-[302px] left-[2%] right-[2%] h-[842px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
+      <div className="absolute top-[3511px] left-0 right-0 h-[994px] rounded-[25px] shadow-[0px_0px_15px_0.5px_#00000040] bg-[linear-gradient(136deg,rgba(33,129,216,0.25)_29%,rgba(226,246,255,0.25)_58%,rgba(14,112,201,0.05)_100%)]" />
 
       {/* Decorative circles */}
       {decorativeCircles.map((circle, index) => (
@@ -81,7 +81,7 @@ export const MacbookPro = (): JSX.Element => {
       ))}
 
       {/* Header Navigation */}
-      <header className="absolute top-[57px] left-[72px] w-[1575px] h-[120px] bg-[#bccbff] rounded-[75px] opacity-45">
+      <header className="absolute top-[57px] left-[4%] right-[4%] h-[120px] bg-[#bccbff] rounded-[75px] opacity-45">
         <div className="absolute top-[70px] left-[85px] w-[94px] h-[94px] rounded-[47px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]">
           <img
             className="absolute w-[80.00%] h-[58.34%] top-[13.83%] left-[10.00%]"
@@ -94,7 +94,7 @@ export const MacbookPro = (): JSX.Element => {
           Helping MBBS
         </div>
 
-        <nav className="flex absolute top-[104px] left-[700px] gap-[120px]">
+        <nav className="flex absolute top-[104px] left-[45%] gap-[120px]">
           <Link
             to="/"
             className="[font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] text-[#0e70c9] hover:text-[#0e70c9] transition-colors cursor-pointer"
@@ -115,12 +115,12 @@ export const MacbookPro = (): JSX.Element => {
           </Link>
         </nav>
 
-        <div className="absolute top-[78px] left-[1551px] w-[79px] h-[78px] rounded-[39.5px/39px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]" />
+        <div className="absolute top-[78px] right-[85px] w-[79px] h-[78px] rounded-[39.5px/39px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]" />
       </header>
 
       {/* Hero Section */}
       <section className="relative">
-        <div className="absolute top-[349px] left-[698px] w-[466px] [font-family:'ABeeZee',Helvetica] font-normal text-[#1e6670] text-8xl tracking-[0] leading-[100px] whitespace-nowrap">
+        <div className="absolute top-[349px] left-[40%] w-[466px] [font-family:'ABeeZee',Helvetica] font-normal text-[#1e6670] text-8xl tracking-[0] leading-[100px] whitespace-nowrap">
           About Us
         </div>
 
@@ -135,7 +135,7 @@ export const MacbookPro = (): JSX.Element => {
         </div>
 
         <img
-          className="absolute top-[391px] left-[1078px] w-[641px] h-[753px] object-cover"
+          className="absolute top-[391px] right-[5%] w-[641px] h-[753px] object-cover"
           alt="Download free png of"
           src="/download-free-png-of-png-indian-man-pointing-smiling-finger---by.png"
         />
@@ -304,7 +304,7 @@ export const MacbookPro = (): JSX.Element => {
       </div>
 
       {/* Footer */}
-      <footer className="absolute top-[4742px] left-0 w-[1728px] h-[472px] bg-[#0e70c9]">
+      <footer className="absolute top-[4742px] left-0 right-0 h-[472px] bg-[#0e70c9]">
         <div className="absolute top-[93px] left-[calc(50.00%_-_797px)] w-[659px] opacity-90 [font-family:'Barlow',Helvetica] font-semibold text-white text-8xl text-center tracking-[0] leading-10">
           Need Help?
         </div>
