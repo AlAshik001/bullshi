@@ -94,18 +94,25 @@ export const MacbookPro = (): JSX.Element => {
           Helping MBBS
         </div>
 
-        <nav className="flex absolute top-[104px] left-[876px] gap-[199px]">
-          {navigationItems.map((item, index) => (
-            <Link
-              to={index === 2 ? "/services" : "#"}
-              key={`nav-${index}`}
-              className={`w-[188px] [font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] ${
-                item.active ? "text-[#0e70c9]" : "text-black"
-              } hover:text-[#0e70c9] transition-colors cursor-pointer`}
-            >
-              {item.label}
-            </Link>
-          ))}
+        <nav className="flex absolute top-[104px] left-[700px] gap-[120px]">
+          <Link
+            to="/"
+            className="[font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] text-[#0e70c9] hover:text-[#0e70c9] transition-colors cursor-pointer"
+          >
+            Home
+          </Link>
+          <Link
+            to="#"
+            className="[font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] text-black hover:text-[#0e70c9] transition-colors cursor-pointer"
+          >
+            About Us
+          </Link>
+          <Link
+            to="/services"
+            className="[font-family:'Inter',Helvetica] font-normal text-2xl tracking-[0] leading-[normal] text-black hover:text-[#0e70c9] transition-colors cursor-pointer"
+          >
+            Join Us
+          </Link>
         </nav>
 
         <div className="absolute top-[78px] left-[1551px] w-[79px] h-[78px] rounded-[39.5px/39px] bg-[linear-gradient(106deg,rgba(82,40,207,1)_16%,rgba(255,255,255,0.25)_50%,rgba(82,40,207,1)_90%)]" />
